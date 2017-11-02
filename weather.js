@@ -40,7 +40,7 @@ let handleWeatherResponse = function(response) {
     $(".forecast").empty();
 
     let markup = "";
-    for (let i=1; i<6; i++){
+    for (let i=1; i<6; i++) {
       markup += "<div class='col'>";
       markup += "<h3>" + icon(response.daily.data[i]) + "</h3>";
       markup += "<h4>" + Math.round(response.daily.data[i].temperatureMax) + "º | " + Math.round(response.daily.data[i].temperatureMin) + "º</h4>";
